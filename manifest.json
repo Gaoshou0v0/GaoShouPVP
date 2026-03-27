@@ -2,9 +2,9 @@
     "schemaVersion":  1,
     "version":  "1.0.0",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShou_CIDlist/main/GaoShouPVP.zip",
-    "sha256":  "C9ECBC2B758030485E8764D5EF2D336F3C0BBA81827F15857DD34652F5DFA746",
-    "size":  75346,
-    "publishedAt":  "2026-03-27T05:40:14.3727694+00:00",
-    "notes":  "Default relative install-path fallback and hidden GitHub source label.",
+    "sha256":  "A4BBBC997D2991169E3AA658719E9C3EEAFFF98F7DF46F70B2484B8BA40604C5",
+    "size":  77311,
+    "publishedAt":  "2026-03-27T05:47:19.3797245+00:00",
+    "notes":  "Fix AEAssist ACR path detection to avoid game install directory.",
     "entryFolder":  "GaoShouPVP"
 }
