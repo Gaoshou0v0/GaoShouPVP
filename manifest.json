@@ -1,10 +1,10 @@
 {
     "schemaVersion":  1,
-    "version":  "1.0.0",
+    "version":  "1.0.1",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShou_CIDlist/main/GaoShouPVP.zip",
-    "sha256":  "C113364917DA415FFDCB1D6DC5FCCC1A3203578263FC0F68FAEF5B1519BCCAA5",
-    "size":  74024,
-    "publishedAt":  "2026-03-27T06:11:38.4269399+00:00",
-    "notes":  "Obfuscated build with hidden diagnostic UI and CID uploader support.",
+    "sha256":  "800B9A0B85DB6062D9E87014D26AC46D779E78782AA319E14CD8C352F697C59C",
+    "size":  74075,
+    "publishedAt":  "2026-03-27T06:20:17.7130771+00:00",
+    "notes":  "Obfuscated 1.0.1 build with update reminder to reload ACR or restart AE.",
     "entryFolder":  "GaoShouPVP"
 }
