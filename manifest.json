@@ -2,9 +2,9 @@
     "schemaVersion":  2,
     "version":  "1.1.0",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShou_CIDlist/main/GaoShouPVP.zip",
-    "sha256":  "ADF8948262810494BC034812C24C2E3843595C48EC684AB6CE206210C0D00E0D",
-    "size":  117222,
-    "publishedAt":  "2026-04-03T07:43:32.3330430+00:00",
+    "sha256":  "78EE28269115F64B6489B5DB29DA5FAD11C47DEDAB88F71F8360C5F28A4B10FA",
+    "size":  117220,
+    "publishedAt":  "2026-04-03T07:47:27.1802774+00:00",
     "notes":  "将白魔主 UI 的主色调整为绿色，并同步提升当前发布版本基线。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
