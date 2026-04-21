@@ -1,8 +1,8 @@
-# GaoShouPVP Bridge Repo
+# GaoShouPVP Remote Files
 
-This repository keeps the 1.1.8 bridge manifest for older clients.
+This repository stores the GaoShouPVP client update assets.
 
-- `manifest.json`: legacy update manifest for 1.1.7 and earlier clients
-- `GaoShouPVP.zip`: bridge update package
-- New clients should switch to the `GaoShouPVP` repository for updates
+- `manifest.json`: update manifest
+- `GaoShouPVP.zip`: current update package
+- CID whitelist management has moved to GaoShouPVP-Service
 
