@@ -1,8 +1,8 @@
-# GaoShouPVP Remote Files
+# GaoShouPVP Bridge Repo
 
-This repository stores the remote whitelist and manual update assets for GaoShouPVP.
+This repository keeps the 1.1.8 bridge manifest for older clients.
 
-- `cid-whitelist.json`: hashed CID whitelist
-- `manifest.json`: update manifest
-- `GaoShouPVP.zip`: current update package
+- `manifest.json`: legacy update manifest for 1.1.7 and earlier clients
+- `GaoShouPVP.zip`: bridge update package
+- New clients should switch to the `GaoShouPVP` repository for updates
 
