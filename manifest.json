@@ -1,33 +1,32 @@
 {
     "schemaVersion":  2,
-    "version":  "2.0.0",
+    "version":  "2.0.1",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
     "sha256":  "EC8CF1F91A12A0FFD5A0D8FB374F2E4E2B88E4F901471E2E67F017A604C13F71",
     "size":  167533,
-    "publishedAt":  "2026-04-29T17:00:06.7714678+00:00",
-    "notes":  "当前发布链路已正式收口到 GaoShouPVP 单仓库；同时修复 Dalamud API 升级后本机身份采集仍调用旧 ClientState 接口导致的 ACR 加载异常。",
+    "publishedAt":  "2026-05-02T18:05:26.8327393+00:00",
+    "notes":  "修复神秘力量页的高频磁盘扫描掉帧问题，并新增神秘力量保护名单避让逻辑；普通用户现在会按 30 分钟缓存周期刷新保护名单，不再选择或攻击名单内的敌方玩家。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
-                         "version":  "2.0.0",
-                         "title":  "2.0.0 单仓库发布与 Dalamud 兼容修复",
-                         "summary":  "当前发布链路已正式收口到 GaoShouPVP 单仓库；同时修复 Dalamud API 升级后本机身份采集仍调用旧 ClientState 接口导致的 ACR 加载异常。",
-                         "publishedAt":  "2026-04-29T23:40:00+08:00",
+                         "version":  "2.0.1",
+                         "title":  "2.0.1 神秘力量保护名单与性能修复",
+                         "summary":  "修复神秘力量页的高频磁盘扫描掉帧问题，并新增神秘力量保护名单避让逻辑；普通用户现在会按 30 分钟缓存周期刷新保护名单，不再选择或攻击名单内的敌方玩家。",
+                         "publishedAt":  "2026-05-03T02:10:00+08:00",
                          "highlights":  [
-                                            "当前更新包与 manifest 只保留 GaoShouPVP 单仓库发布",
-                                            "PVP超新星 本机身份采集、战场工具与权限页已迁移到 PlayerState，修复 Dalamud API 升级后的 MissingMethodException",
-                                            "现行知识库、版本基线与本地打包流程已统一更新到 2.0.0"
+                                            "神秘力量页已改为读取缓存诊断信息，不再因实时扫描安装目录导致明显掉帧",
+                                            "客户端新增神秘力量保护名单避让：自动选低血、公共收头和单体攻击合法性判断都会绕过受保护敌人",
+                                            "保护名单缓存不做实时轮询，默认每 30 分钟通过 auth/session 刷新一次"
                                         ],
                          "added":  [
-
+                                       "auth/session 现会向客户端同步当前生效的神秘力量保护名单"
                                    ],
                          "changed":  [
-                                         "当前发布版本基线更新为 2.0.0",
-                                         "scripts/package-update-release.ps1 现仅生成 GaoShouPVP.zip 与 manifest.json",
-                                         "现行发布说明改为只保留 GaoShouPVP 仓库"
+                                         "当前发布版本基线更新为 2.0.1",
+                                         "神秘力量保护名单按角色名和原始服务器在战斗侧统一判定并缓存"
                                      ],
                          "fixed":  [
-                                       "修复 PVP超新星 本机身份服务在 Dalamud API 升级后因 IClientState.get_LocalPlayer() 缺失导致的 ACR 加载失败",
-                                       "修复权限页与战场工具仍直接依赖旧 ClientState 身份字段的兼容性风险"
+                                       "修复神秘力量页打开时因更新诊断路径实时扫盘而导致的帧数暴跌问题",
+                                       "修复普通用户在自动选目标或公共技能判定中仍可能选中神秘力量名单敌人的问题"
                                    ],
                          "knownIssues":  [
 
