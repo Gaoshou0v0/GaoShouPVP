@@ -2,9 +2,9 @@
     "schemaVersion":  2,
     "version":  "2.0.1",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-    "sha256":  "EC8CF1F91A12A0FFD5A0D8FB374F2E4E2B88E4F901471E2E67F017A604C13F71",
-    "size":  167533,
-    "publishedAt":  "2026-05-02T18:05:26.8327393+00:00",
+    "sha256":  "B68092AC64D4D65F9E795131EF18CF8D1E5981C5AF2E8DA296882EAEB978B86B",
+    "size":  168370,
+    "publishedAt":  "2026-05-02T18:10:11.5015285+00:00",
     "notes":  "修复神秘力量页的高频磁盘扫描掉帧问题，并新增神秘力量保护名单避让逻辑；普通用户现在会按 30 分钟缓存周期刷新保护名单，不再选择或攻击名单内的敌方玩家。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
