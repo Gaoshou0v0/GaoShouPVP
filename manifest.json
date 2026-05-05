@@ -1,33 +1,31 @@
-﻿{
+{
     "schemaVersion":  2,
-    "version":  "2.0.0",
+    "version":  "2.0.1",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-    "sha256":  "273B0BEEA002DF5A6D1589FD0C5369C1C29220E859E763C7FA2A85B33AC238E2",
-    "size":  167533,
-    "publishedAt":  "2026-05-02T19:06:55.3199139Z",
-    "notes":  "当前发布链路已正式收口到 GaoShouPVP 单仓库；同时修复 Dalamud API 升级后本机身份采集仍调用旧 ClientState 接口导致的 ACR 加载异常。",
+    "sha256":  "369B13431D19806C731870C69462A1C96311BE5FF19B3FAAAD00397D7A03E910",
+    "size":  168252,
+    "publishedAt":  "2026-05-05T19:08:42.2071064+00:00",
+    "notes":  "神秘力量页当前不再展示安装目录文案，避免页面渲染时反复触发安装目录探测，降低切入该页时的 UI 卡顿风险。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
-                         "version":  "2.0.0",
-                         "title":  "2.0.0 单仓库发布与 Dalamud 兼容修复",
-                         "summary":  "当前发布链路已正式收口到 GaoShouPVP 单仓库；同时修复 Dalamud API 升级后本机身份采集仍调用旧 ClientState 接口导致的 ACR 加载异常。",
-                         "publishedAt":  "2026-04-29T23:40:00+08:00",
+                         "version":  "2.0.1",
+                         "title":  "2.0.1 神秘力量页安装目录诊断精简",
+                         "summary":  "神秘力量页当前不再展示安装目录文案，避免页面渲染时反复触发安装目录探测，降低切入该页时的 UI 卡顿风险。",
+                         "publishedAt":  "2026-05-06T03:07:49+08:00",
                          "highlights":  [
-                                            "当前更新包与 manifest 只保留 GaoShouPVP 单仓库发布",
-                                            "PVP超新星 本机身份采集、战场工具与权限页已迁移到 PlayerState，修复 Dalamud API 升级后的 MissingMethodException",
-                                            "现行知识库、版本基线与本地打包流程已统一更新到 2.0.0"
+                                            "神秘力量页已移除安装目录文案，切页时不再为该诊断项反复做安装目录定位",
+                                            "当前仍保留更新清单缓存、更新工作目录和云端授权状态等诊断信息",
+                                            "本次版本基线已提升到 2.0.1，并将重新生成对应混淆更新包与 manifest"
                                         ],
                          "added":  [
 
                                    ],
                          "changed":  [
-                                         "当前发布版本基线更新为 2.0.0",
-                                         "scripts/package-update-release.ps1 现仅生成 GaoShouPVP.zip 与 manifest.json",
-                                         "现行发布说明改为只保留 GaoShouPVP 仓库"
+                                         "当前发布版本基线更新为 2.0.1",
+                                         "神秘力量页诊断区不再显示安装目录，仅保留更新相关诊断信息"
                                      ],
                          "fixed":  [
-                                       "修复 PVP超新星 本机身份服务在 Dalamud API 升级后因 IClientState.get_LocalPlayer() 缺失导致的 ACR 加载失败",
-                                       "修复权限页与战场工具仍直接依赖旧 ClientState 身份字段的兼容性风险"
+                                       "缓解神秘力量页因安装目录文案触发目录探测而产生的页面掉帧问题"
                                    ],
                          "knownIssues":  [
 
