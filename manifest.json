@@ -1,0 +1,34 @@
+{
+    "schemaVersion":  2,
+    "version":  "2.0.5",
+    "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
+    "sha256":  "07E7984C4BDA02ACB4C6F1B976298E66673B7F327BE5E4BBDDD8DDE6AC2E0B69",
+    "size":  199795,
+    "publishedAt":  "2026-05-13T10:21:36.6485912+00:00",
+    "notes":  "本次发布新增云端火影特权入口展示，并兼容 AEAssist.NET 1.2.14 的 GCD API 变更，避免新版运行环境下旧 GCD 方法缺失导致循环报错。",
+    "entryFolder":  "GaoShouPVP",
+    "releaseNotes":  {
+                         "version":  "2.0.5",
+                         "title":  "2.0.5 云端火影入口与 AEAssist 兼容修复",
+                         "summary":  "本次发布新增云端火影特权入口展示，并兼容 AEAssist.NET 1.2.14 的 GCD API 变更，避免新版运行环境下旧 GCD 方法缺失导致循环报错。",
+                         "publishedAt":  "2026-05-13T16:15:00+08:00",
+                         "highlights":  [
+                                            "新增云端 capabilities 中文字段 火影 的客户端读取入口，并在神秘力量页面展示云端火影模式状态",
+                                            "兼容 AEAssist.NET 1.2.14 的 GCD 时长获取接口，修复新版运行环境下 GetGCDDuration(Boolean) 缺失导致的报错",
+                                            "当前发布版本基线更新为 2.0.5"
+                                        ],
+                         "added":  [
+                                       "新增 火影模式已授权 与 火影模式已解锁 的客户端权限入口"
+                                   ],
+                         "changed":  [
+                                         "AEAssist.NET 依赖更新到 1.2.14",
+                                         "GCD 时长封装改为使用 GCDHelper.GetGCDDuration()，保持现有 PvP 技能时机语义"
+                                     ],
+                         "fixed":  [
+                                       "修复 AEAssist.NET 1.2.14 下 MemApiSpell.GetGCDDuration(Boolean) 不存在导致黑魔等职业循环报错的问题"
+                                   ],
+                         "knownIssues":  [
+                                             "火影当前仅作为云端特权入口和神秘力量页面展示项，尚未接入忍者 QT、API 或解析器逻辑"
+                                         ]
+                     }
+}
