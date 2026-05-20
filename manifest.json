@@ -1,34 +1,35 @@
 {
     "schemaVersion":  2,
-    "version":  "2.0.5",
+    "version":  "2.0.6",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-    "sha256":  "ED46DFFDC4AA22ABF6A92A6C9ABD7967C7342882F816F3E68034F85B2641ADEA",
-    "size":  223642,
-    "publishedAt":  "2026-05-13T14:58:16.4304314+00:00",
-    "notes":  "本次发布新增云端火影特权入口展示，并兼容 AEAssist.NET 1.2.14 的 GCD API 变更，避免新版运行环境下旧 GCD 方法缺失导致循环报错。",
+    "sha256":  "4FE65C3894715CED47B1996C89BBAE8C14C7AC821CA1B1810A2052C992804033",
+    "size":  224333,
+    "publishedAt":  "2026-05-20T07:16:30.0830124+00:00",
+    "notes":  "本次发布为所有非忍者 PvP 职业接入公共自动疾跑 QT，统一自动净化资源与状态判定，隐藏忍者自动喝药 QT，并收窄学者爱扩毒的蛊毒法目标检测范围。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
-                         "version":  "2.0.5",
-                         "title":  "2.0.5 云端火影入口与 AEAssist 兼容修复",
-                         "summary":  "本次发布新增云端火影特权入口展示，并兼容 AEAssist.NET 1.2.14 的 GCD API 变更，避免新版运行环境下旧 GCD 方法缺失导致循环报错。",
-                         "publishedAt":  "2026-05-13T16:15:00+08:00",
+                         "version":  "2.0.6",
+                         "title":  "2.0.6 自动疾跑与自动净化收口",
+                         "summary":  "本次发布为所有非忍者 PvP 职业接入公共自动疾跑 QT，统一自动净化资源与状态判定，隐藏忍者自动喝药 QT，并收窄学者爱扩毒的蛊毒法目标检测范围。",
+                         "publishedAt":  "2026-05-20T15:13:34+08:00",
                          "highlights":  [
-                                            "新增云端 capabilities 中文字段 火影 的客户端读取入口，并在神秘力量页面展示云端火影模式状态",
-                                            "兼容 AEAssist.NET 1.2.14 的 GCD 时长获取接口，修复新版运行环境下 GetGCDDuration(Boolean) 缺失导致的报错",
-                                            "当前发布版本基线更新为 2.0.5"
+                                            "所有非忍者 PvP 职业新增默认开启的自动疾跑 QT，脱战连续移动 3 秒且 GCD 窗口安全时自动释放冲刺",
+                                            "公共自动净化与忍者判定对齐，仅在净化资源可用且自身命中可解控状态后按常规延迟释放",
+                                            "忍者精简 QT 改为展示自动疾跑，自动喝药入口隐藏但仍按默认开启值生效"
                                         ],
                          "added":  [
-                                       "新增 火影模式已授权 与 火影模式已解锁 的客户端权限入口"
+                                       "新增公共自动疾跑解析器，并接入机工、骑士、战士、绝枪、诗人、武士、武僧、龙骑、蝰蛇、黑魔、召唤、白魔、学者、贤者"
                                    ],
                          "changed":  [
-                                         "AEAssist.NET 依赖更新到 1.2.14",
-                                         "GCD 时长封装改为使用 GCDHelper.GetGCDDuration()，保持现有 PvP 技能时机语义"
+                                         "当前发布版本基线更新为 2.0.6",
+                                         "净化资源判断收口为 PVP、未防御、蓝量和净化冷却的统一入口",
+                                         "学者爱扩毒的蛊毒法目标检测范围缩短为 10m"
                                      ],
                          "fixed":  [
-                                       "修复 AEAssist.NET 1.2.14 下 MemApiSpell.GetGCDDuration(Boolean) 不存在导致黑魔等职业循环报错的问题"
+                                       "修复公共自动净化与忍者净化判定不一致导致的释放时机不稳定问题"
                                    ],
                          "knownIssues":  [
-                                             "火影当前仅作为云端特权入口和神秘力量页面展示项，尚未接入忍者 QT、API 或解析器逻辑"
+
                                          ]
                      }
 }
