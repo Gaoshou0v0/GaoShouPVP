@@ -2,9 +2,9 @@
     "schemaVersion":  2,
     "version":  "2.0.8",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-    "sha256":  "4A3CB6DAF1987843324625BA9360C414C010516467EDAA791A032E37D75AC04B",
-    "size":  226218,
-    "publishedAt":  "2026-05-21T22:54:37.5967329+00:00",
+    "sha256":  "8B54A06A441A0F26CF7FB18A1ADCE373CF784042373A849AC3AA719657937F50",
+    "size":  226266,
+    "publishedAt":  "2026-05-21T23:03:02.7925039+00:00",
     "notes":  "本次发布收紧 PvP ACR 基础白名单与忍者火影特权门槛，移除本地火影保底入口和爱发电展示入口，并同步更新云端能力说明。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
