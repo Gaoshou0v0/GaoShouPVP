@@ -1,37 +1,26 @@
 {
-    "schemaVersion":  2,
-    "version":  "2.0.8",
-    "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-    "sha256":  "8B54A06A441A0F26CF7FB18A1ADCE373CF784042373A849AC3AA719657937F50",
-    "size":  226266,
-    "publishedAt":  "2026-05-21T23:03:02.7925039+00:00",
-    "notes":  "本次发布收紧 PvP ACR 基础白名单与忍者火影特权门槛，移除本地火影保底入口和爱发电展示入口，并同步更新云端能力说明。",
-    "entryFolder":  "GaoShouPVP",
-    "releaseNotes":  {
-                         "version":  "2.0.8",
-                         "title":  "2.0.8 云端权限收紧",
-                         "summary":  "本次发布收紧 PvP ACR 基础白名单与忍者火影特权门槛，移除本地火影保底入口和爱发电展示入口，并同步更新云端能力说明。",
-                         "publishedAt":  "2026-05-22T06:53:16+08:00",
-                         "highlights":  [
-                                            "基础 ACR 使用继续以云端白名单会话为准，忍者自有解析器也补齐运行时授权硬门槛",
-                                            "忍者火影模式只认云端火影特权，星遁天诛及 LB 无位移、无后摇特权不会再被本地保底解锁",
-                                            "公共权限概览、上传配置、README 和发布说明中的爱发电入口已移除"
-                                        ],
-                         "added":  [
-                                       "新增服务端回归测试，确认拥有特权记录但不在基础白名单的 CID 仍无法创建 ACR 会话"
-                                   ],
-                         "changed":  [
-                                         "当前发布版本基线更新为 2.0.8",
-                                         "忍者神秘力量页改为只展示云端火影状态和刷新提示",
-                                         "upload_config 不再携带支持链接字段"
-                                     ],
-                         "fixed":  [
-                                       "修复忍者部分自有 ISlotResolver 缺少基础授权检查导致未授权状态仍可能产出技能的问题",
-                                       "修复火影本地神秘代码保底可绕过云端特权名单的问题",
-                                       "修复非火影状态下星遁天诛热键或 LB 特权 hook 可能残留生效的问题"
-                                   ],
-                         "knownIssues":  [
-
-                                         ]
-                     }
+  "schemaVersion": 2,
+  "version": "2.0.9",
+  "packageUrl": "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
+  "sha256": "91B64957756C053960DF36688C57D4B1706F9177D103BBC5D1E1B4FD76BD81FA",
+  "size": 226183,
+  "publishedAt": "2026-05-21T23:29:40.7426685+00:00",
+  "notes": "本次发布移除神秘力量页底部的特供模式开放说明，保留云端特权状态与刷新入口。",
+  "entryFolder": "GaoShouPVP",
+  "releaseNotes": {
+    "version": "2.0.9",
+    "title": "2.0.9 神秘力量文案精简",
+    "summary": "本次发布移除神秘力量页底部的特供模式开放说明，保留云端特权状态与刷新入口。",
+    "publishedAt": "2026-05-22T07:28:23+08:00",
+    "highlights": [
+      "神秘力量页不再展示特供模式开放说明"
+    ],
+    "added": [],
+    "changed": [
+      "当前发布版本基线更新为 2.0.9",
+      "神秘力量页保留云端特权状态、更新状态和刷新云端特权按钮"
+    ],
+    "fixed": [],
+    "knownIssues": []
+  }
 }
