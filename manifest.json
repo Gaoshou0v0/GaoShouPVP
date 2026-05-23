@@ -1,26 +1,37 @@
 {
-  "schemaVersion": 2,
-  "version": "2.0.9",
-  "packageUrl": "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-  "sha256": "91B64957756C053960DF36688C57D4B1706F9177D103BBC5D1E1B4FD76BD81FA",
-  "size": 226183,
-  "publishedAt": "2026-05-21T23:29:40.7426685+00:00",
-  "notes": "本次发布移除神秘力量页底部的特供模式开放说明，保留云端特权状态与刷新入口。",
-  "entryFolder": "GaoShouPVP",
-  "releaseNotes": {
-    "version": "2.0.9",
-    "title": "2.0.9 神秘力量文案精简",
-    "summary": "本次发布移除神秘力量页底部的特供模式开放说明，保留云端特权状态与刷新入口。",
-    "publishedAt": "2026-05-22T07:28:23+08:00",
-    "highlights": [
-      "神秘力量页不再展示特供模式开放说明"
-    ],
-    "added": [],
-    "changed": [
-      "当前发布版本基线更新为 2.0.9",
-      "神秘力量页保留云端特权状态、更新状态和刷新云端特权按钮"
-    ],
-    "fixed": [],
-    "knownIssues": []
-  }
+    "schemaVersion":  2,
+    "version":  "2.1.0",
+    "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
+    "sha256":  "13FC5FB0121D024954A2A80C7C7BD3334C2514D85D09DFE1227A8935CBA946F5",
+    "size":  227523,
+    "publishedAt":  "2026-05-23T01:13:41.7936848+00:00",
+    "notes":  "本次发布修复枪刃进人群后仍打单体的问题，新增蝰蛇蛇鳞后进场 QT，并隐藏 PVP超新星榜单查询入口但保留数据上传链路。",
+    "entryFolder":  "GaoShouPVP",
+    "releaseNotes":  {
+                         "version":  "2.1.0",
+                         "title":  "2.1.0 PvP 职业逻辑与超新星入口调整",
+                         "summary":  "本次发布修复枪刃进人群后仍打单体的问题，新增蝰蛇蛇鳞后进场 QT，并隐藏 PVP超新星榜单查询入口但保留数据上传链路。",
+                         "publishedAt":  "2026-05-23T09:11:43+08:00",
+                         "highlights":  [
+                                            "枪刃对群判定改为按自身 5m 敌人数触发，命运之环优先于单体烈牙链释放",
+                                            "蝰蛇新增默认关闭的蛇鳞后进场 QT，硬化鳞期间优先 LB 进敌群，否则蛇行突进",
+                                            "PVP超新星榜单查询 QT 已隐藏，后台采集和上传链路保持启用"
+                                        ],
+                         "added":  [
+                                       "蝰蛇新增默认关闭的蛇鳞后进场 QT，蛇鳞术蹲下期间会持续向敌人最多的位置提交进场技能",
+                                       "蝰蛇蛇鳞后进场会在硬化鳞消失后保留 700ms 尝试窗口"
+                                   ],
+                         "changed":  [
+                                         "当前发布版本基线更新为 2.1.0",
+                                         "PVP超新星榜单查询入口 QT 暂时隐藏，本机信息采集、对局采集与云端上传初始化保留不变"
+                                     ],
+                         "fixed":  [
+                                       "修复枪刃进人群后仍持续打单体连的问题",
+                                       "修复枪刃命运之环 / 命运之印按目标类型构建导致近身 AOE 判定不稳定的问题",
+                                       "优化蝰蛇蛇鳞后进场提交前的目标范围复查，降低目标跑出距离后卡手的概率"
+                                   ],
+                         "knownIssues":  [
+
+                                         ]
+                     }
 }
