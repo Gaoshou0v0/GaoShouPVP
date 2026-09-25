@@ -1,33 +1,35 @@
 {
     "schemaVersion":  2,
-    "version":  "2.2.4",
+    "version":  "2.4.0",
     "packageUrl":  "https://raw.githubusercontent.com/Gaoshou0v0/GaoShouPVP/main/GaoShouPVP.zip",
-    "sha256":  "597D8A410E90047D872A3A143E7B108C9F4DBA9727977089C53EC8807E20F88F",
-    "size":  252350,
-    "publishedAt":  "2026-09-02T18:05:31.3193290+00:00",
-    "notes":  "修复诗人勇气绑定目标和赤魔大法师开局鼓励时序，减少自动技能在错误目标或错误时机释放。",
+    "sha256":  "1C3BB9FB9792C0C92A0F0CD79FD90F08185922FE7150DD88102D3C055FC4AC62",
+    "size":  284142,
+    "publishedAt":  "2026-09-25T20:28:34.9737445+00:00",
+    "notes":  "汇总机工 Promax 时序与伤害预测改进、忍者失效热键清理，并生成 Release 混淆更新包。",
     "entryFolder":  "GaoShouPVP",
     "releaseNotes":  {
-                         "version":  "2.2.4",
-                         "title":  "2.2.4 PvP 自动技能时序修复",
-                         "summary":  "修复诗人勇气绑定目标和赤魔大法师开局鼓励时序，减少自动技能在错误目标或错误时机释放。",
-                         "publishedAt":  "2026-09-03T02:04:15+08:00",
+                         "version":  "2.4.0",
+                         "title":  "2.4.0 混淆发布与 PvP 稳定性修复",
+                         "summary":  "汇总机工 Promax 时序与伤害预测改进、忍者失效热键清理，并生成 Release 混淆更新包。",
+                         "publishedAt":  "2026-09-26T04:21:58+08:00",
                          "highlights":  [
-                                            "诗人自动勇气优先使用有效绑定队友，失效时安全回退自身",
-                                            "赤魔大法师首次极限槽采样期间不再开局立即释放鼓励"
+                                            "机工 K头 Promax 补充 UseAction、UseActionLocation 和 SpellCastTime 执行采集，完善瞬发技能、读条技能及在途伤害时间线",
+                                            "机工 Promax 按 ActionEffect 目标、执行来源和技能替换关系去重，避免重复记录和错误伤害预测",
+                                            "忍者 QT 重建时清理已不存在的‘仅分身手里剑’等失效热键配置，避免 AEAssist 热键轮询抛出 KeyNotFoundException",
+                                            "Release 构建启用 Obfuscar 混淆，隐藏字符串并重命名私有成员，同时保留 AEAssist/Dalamud 公共插件 API 兼容性"
                                         ],
                          "added":  [
-
+                                       "2.4.0 本地混淆发布包、SHA256 manifest 和结构校验流程"
                                    ],
                          "changed":  [
-                                         "赤魔大法师在获得有效极限槽增长采样后继续按 15 秒联动窗口判断鼓励时机"
+                                         "发布版本基线从 2.3.0 更新为 2.4.0"
                                      ],
                          "fixed":  [
-                                       "修复诗人自动循环忽略勇气绑定队友并释放给自身的问题",
-                                       "修复赤魔开启大法师 QT 后开局立即使用鼓励的问题"
+                                       "修复忍者精简 QT 模式残留失效热键导致 AEAssist KeyNotFoundException 的问题",
+                                       "修复机工 Promax 执行事件、技能替换和在途伤害预测的时序一致性问题"
                                    ],
                          "knownIssues":  [
-
+                                             "外部瞬发技能未能被客户端可靠识别时仍会按保守策略延后 Promax 收头"
                                          ]
                      }
 }
